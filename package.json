@@ -1,5 +1,5 @@
 {
-  "name": "ts-node-sentry-example",
+  "name": "ts-node-request-validation-joi",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -14,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlbertHernandez/ts-node-sentry-example.git"
+    "url": "git+https://github.com/AlbertHernandez/ts-node-request-validation-joi.git"
   },
   "keywords": [
     "typescript",
-    "logger with request id"
+    "request validation"
   ],
   "author": "",
   "license": "",
@@ -27,9 +27,9 @@
     "npm": ">=8.3.0"
   },
   "bugs": {
-    "url": "https://github.com/AlbertHernandez/ts-node-sentry-example/issues"
+    "url": "https://github.com/AlbertHernandez/ts-node-request-validation-joi/issues"
   },
-  "homepage": "https://github.com/AlbertHernandez/ts-node-sentry-example#readme",
+  "homepage": "https://github.com/AlbertHernandez/ts-node-request-validation-joi#readme",
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",

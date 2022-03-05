@@ -1,8 +1,8 @@
 <h1 align="center">🚀</h1>
-<h3 align="center">TS Node Sentry Example</h3>
+<h3 align="center">TS Node Request Validation Joi</h3>
 
 <p align="center">
- Example of a basic typescript backend application that has configured sentry for tracking errors
+ Example of a Node application that uses joi for validating requests
 </p>
 
 ## Table of Contents
