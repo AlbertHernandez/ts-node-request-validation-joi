@@ -50,13 +50,11 @@ export const validateSchema = async (schemas: SchemasConfig, ctx: Context) => {
           setRequestPart(ctx, requestPartType, value);
         }
       } catch (error) {
-        if (!(error instanceof Error)) {
-          throw error;
+        if (error instanceof Error) {
+          throw new BadRequestError({
+            message: error.message,
+          });
         }
-
-        throw new BadRequestError({
-          message: error.message,
-        });
       }
     }
   }
