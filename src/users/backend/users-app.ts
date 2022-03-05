@@ -3,11 +3,9 @@ import http from "http";
 import { usersRouter } from "./routes";
 import { config } from "../infrastructure/config";
 import {
-  errorHandlerMiddleware,
   requestContainerMiddleware,
   requestContextMiddleware,
   requestLoggerMiddleware,
-  sentryScopeMiddleware,
 } from "./middlewares";
 import bodyParser from "koa-bodyparser";
 import { Logger } from "../domain/logger";
@@ -27,9 +25,7 @@ export class UsersApp {
     this.koa.use(bodyParser());
     this.koa.use(requestContainerMiddleware);
     this.koa.use(requestContextMiddleware);
-    this.koa.use(sentryScopeMiddleware);
     this.koa.use(requestLoggerMiddleware);
-    this.koa.use(errorHandlerMiddleware);
     this.koa.use(usersRouter.middleware());
   }
 
