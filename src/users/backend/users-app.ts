@@ -6,6 +6,7 @@ import {
   requestContainerMiddleware,
   requestContextMiddleware,
   requestLoggerMiddleware,
+  errorHandlerMiddleware,
 } from "./middlewares";
 import bodyParser from "koa-bodyparser";
 import { Logger } from "../domain/logger";
@@ -26,6 +27,7 @@ export class UsersApp {
     this.koa.use(requestContainerMiddleware);
     this.koa.use(requestContextMiddleware);
     this.koa.use(requestLoggerMiddleware);
+    this.koa.use(errorHandlerMiddleware);
     this.koa.use(usersRouter.middleware());
   }
 
