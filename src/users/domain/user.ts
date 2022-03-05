@@ -7,9 +7,5 @@ export class User {
     this.id = dependencies.id;
     this.name = dependencies.name;
     this.age = dependencies.age;
-
-    if (this.age < 18) {
-      throw new Error("Users need to be of legal age");
-    }
   }
 }
